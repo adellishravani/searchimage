@@ -1,0 +1,14 @@
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bg {
+  text-align: center;
+  padding: 5px;
+}
+.heading {
+  color: black;
+  font-size: 30px;
+}
