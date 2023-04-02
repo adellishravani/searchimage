@@ -12,12 +12,12 @@ class DestinationSearch extends Component {
   }
 
   render() {
-    const {destinationList} = this.props
+    const {destinationsList} = this.props
 
     const {searchinput} = this.state
 
-    const searchResults = destinationList.filter(eachuser =>
-      eachuser.name.toLowercase().includes(searchinput.toLowercase()),
+    const searchResults = destinationsList.filter(eachuser =>
+      eachuser.name.toLowerCase().includes(searchinput.toLowerCase()),
     )
 
     return (
@@ -27,7 +27,7 @@ class DestinationSearch extends Component {
           <input
             type="search"
             onChange={this.onchangeinput}
-            value={searchResults}
+            value={searchinput}
           />
           <img
             src="https://assets.ccbp.in/frontend/react-js/destinations-search-icon-img.png"
